@@ -1,0 +1,10 @@
+<%= link("Back", to: "/") %>
+
+<section class="phx-hero">
+  <p>Print</p>
+
+  <%= form_for :file_details, Routes.page_path(@conn, :upload_print), [multipart: true], fn f -> %>
+    <%= file_input f, :filename %>
+    <%= submit("Click here to Print") %>
+  <% end %>
+</section>

@@ -8,7 +8,8 @@
 import Config
 
 config :print,
-  ecto_repos: [Print.Repo]
+  ecto_repos: [Print.Repo],
+  should_print: true
 
 # Configures the endpoint
 config :print, PrintWeb.Endpoint,
